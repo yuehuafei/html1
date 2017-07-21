@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap practise</title>
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+    <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+    #main{
+        background-color: #3c3c3c;
+    }
+    #head{
+        height: 40px;
+        width:800px ;
+        margin: auto;
+        float: inherit;
+
+    }
+    #img{
+        position:absolute;
+        left:150px;
+        top:0px;
+        z-index:-1;
+    }
+    #word{
+        margin-left:400px;
+    }
+    #picture{
+        margin-left: auto;
+        margin-right: auto;
+        width: 1300px;
+    }
+    #part2{
+        background-color: #9d9d9d;
+    }
+    .t2{
+        margin-left: 100px;
+        float: left;
+    }
+</style>
+<body>
+<!--write your code here-->
+<div id="main">
+    <div id="head" >
+        <ul class="nav nav-pills" >
+            <li role="presentation" class="active"><a href="#">Project name</a></li>
+            <li role="presentation"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">About</a></li>
+            <li role="presentation"><a href="#">Contact</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div id="picture">
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="sucai6.jpg" alt="...">
+                <div class="carousel-caption">
+                    <div id="word1">
+                        <p ><h3>故事的小黄花 </h3></p>
+                        <p ><h3>从出生那年就飘着 </h3> </p>
+                        <p > <h3>童年的荡秋千 </h3></p>
+                        <p ><h3>随记忆一直晃到现在 </h3></p>
+                        <p ><h3>rui sou sou xi dou xi la </h3></p>
+                        <p ><h3>sou la xi xi xi xi la xi la sou </h3></p>
+                        <p ><h3> 吹着前奏望着天空</h3></p>
+                        <p ><h3> 我想起花瓣试着掉落</h3></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="sucai7.jpg" alt="...">
+                <div class="carousel-caption">
+                    <div id="word2">
+                        <p ><h3>为你翘课的那一天</h3></p>
+                        <p ><h3>花落的那一天</h3> </p>
+                        <p > <h3>教室的那一间</h3></p>
+                        <p ><h3>我怎么看不见</h3></p>
+                        <p ><h3>消失的下雨天 我好想再淋一遍</h3></p>
+                        <p ><h3>没想到失去的勇气我还留着</h3></p>
+                        <p ><h3>好想再问一遍 </h3></p>
+                        <p ><h3>你会等待还是离开</h3></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="sucai8.jpg" alt="...">
+                <div class="carousel-caption">
+                    <div id="word3">
+                        <p ><h3>刮风这天我试过握着你手 </h3></p>
+                        <p ><h3>但偏偏雨渐渐大到我看你不见 </h3> </p>
+                        <p > <h3>还要多久我才能在你身边 </h3></p>
+                        <p ><h3>等到放晴的那天也许我会比较好一点  </h3></p>
+                        <p ><h3>从前从前有个人爱你很久 </h3></p>
+                        <p ><h3>但偏偏风渐渐把距离吹得好远</h3></p>
+                        <p ><h3>好不容易又能再多爱一天 </h3></p>
+                        <p ><h3>但故事的最后你好像还是说了拜拜 </h3></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    </div>
+
+<div id="part2">
+    <div class="t2">
+        <img src="sicai9.jpeg" alt="">
+        <p ><h3>刮风这天我试过握着你手 </h3></p>
+        <p ><h3>但偏偏雨渐渐大到我看你不见 </h3> </p>
+        <p > <h3>还要多久我才能在你身边 </h3></p>
+        <p ><h3>等到放晴的那天也许我会比较好一点  </h3></p>
+        <p ><h3>从前从前有个人爱你很久 </h3></p>
+        <p ><h3>但偏偏风渐渐把距离吹得好远</h3></p>
+        <p ><h3>好不容易又能再多爱一天 </h3></p>
+        <p ><h3>但故事的最后你好像还是说了拜拜 </h3></p>
+
+    </div>
+    <div class="t2">
+        <img src="sicai9.jpeg" alt="">
+        <p ><h3>刮风这天我试过握着你手 </h3></p>
+        <p ><h3>但偏偏雨渐渐大到我看你不见 </h3> </p>
+        <p > <h3>还要多久我才能在你身边 </h3></p>
+        <p ><h3>等到放晴的那天也许我会比较好一点  </h3></p>
+        <p ><h3>从前从前有个人爱你很久 </h3></p>
+        <p ><h3>但偏偏风渐渐把距离吹得好远</h3></p>
+        <p ><h3>好不容易又能再多爱一天 </h3></p>
+        <p ><h3>但故事的最后你好像还是说了拜拜 </h3></p>
+
+    </div>
+    <div class="t2">
+        <img src="sicai9.jpeg" alt="">
+        <p ><h3>刮风这天我试过握着你手 </h3></p>
+        <p ><h3>但偏偏雨渐渐大到我看你不见 </h3> </p>
+        <p > <h3>还要多久我才能在你身边 </h3></p>
+        <p ><h3>等到放晴的那天也许我会比较好一点  </h3></p>
+        <p ><h3>从前从前有个人爱你很久 </h3></p>
+        <p ><h3>但偏偏风渐渐把距离吹得好远</h3></p>
+        <p ><h3>好不容易又能再多爱一天 </h3></p>
+        <p ><h3>但故事的最后你好像还是说了拜拜 </h3></p>
+
+    </div>
+</div>
+</div>
+</body>
+</html>
